@@ -126,7 +126,7 @@ class _CatenaryState extends State<Catenary> {
 
       CameraUpdate c = CameraUpdate.newLatLngZoom( LatLng(_locationData!.latitude!, _locationData!.longitude!), 15);
 
-      mapController!.animateCamera(c);
+      mapController!.animateCamera(c, duration: const Duration(milliseconds: 2500));
     }
 
 
