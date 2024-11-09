@@ -1,5 +1,5 @@
 name: catenary_flutter
-description: "A new Flutter project."
+description: "Powerful public transport map"
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
@@ -41,6 +41,11 @@ dependencies:
   flutter_localizations:
     sdk: flutter
   intl: any
+  maplibre_gl: ^0.20.0
+  location: ^6.0.2
+  device_info_plus: ^11.1.1
+  permission_handler: ^11.3.1
+  flutter_material_design_icons: ^1.1.7447
 
 dev_dependencies:
   flutter_test:
