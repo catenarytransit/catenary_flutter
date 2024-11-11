@@ -12,7 +12,6 @@ import 'package:location/location.dart';
 import 'package:flutter_material_design_icons/flutter_material_design_icons.dart';
 import 'package:device_info_plus/device_info_plus.dart';
 import './add_layers.dart';
-import 'package:package_info_plus/package_info_plus.dart';
 
 Future<void> main() async {
   await RustLib.init();
@@ -91,10 +90,6 @@ class _CatenaryState extends State<Catenary> {
   }
 
   void startInitAsync() async {
-    PackageInfo.fromPlatform().then((value) {
-      print(value); // Value will be our all details we get from package info package
-    });
-
     _permissionGranted = await location.hasPermission();
 
     location.onLocationChanged.listen((LocationData currentLocation) async {
@@ -108,7 +103,6 @@ class _CatenaryState extends State<Catenary> {
   void initState() {
     super.initState();
 
-    WidgetsFlutterBinding.ensureInitialized();
 
     startInitAsync();
   }
