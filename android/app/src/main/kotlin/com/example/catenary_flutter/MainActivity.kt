@@ -1,4 +1,4 @@
-package com.example.catenary_flutter
+package com.catenary.catenarymaps
 
 import io.flutter.embedding.android.FlutterActivity
 

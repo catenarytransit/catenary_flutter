@@ -11,6 +11,7 @@ import 'package:maplibre_gl/maplibre_gl.dart';
 import 'package:location/location.dart';
 import 'package:flutter_material_design_icons/flutter_material_design_icons.dart';
 import 'package:device_info_plus/device_info_plus.dart';
+import './add_layers.dart';
 
 Future<void> main() async {
   await RustLib.init();
@@ -84,11 +85,7 @@ class _CatenaryState extends State<Catenary> {
             });
           }
         }
-
       }
-
-
-
     }
   }
 
@@ -128,8 +125,6 @@ class _CatenaryState extends State<Catenary> {
 
       mapController!.animateCamera(c, duration: const Duration(milliseconds: 2500));
     }
-
-
   }
 
   void _onMapCreated(MapLibreMapController controller) async {
