@@ -46,11 +46,12 @@ dependencies:
   device_info_plus: ^11.1.1
   permission_handler: ^11.3.1
   flutter_material_design_icons: ^1.1.7447
+  package_info_plus: ^8.1.1
 
 dev_dependencies:
+  flutter_launcher_icons: ^0.14.1
   flutter_test:
     sdk: flutter
-  flutter_launcher_icons: "latest version"
 
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is
@@ -103,7 +104,8 @@ flutter:
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/to/font-from-package
 
-flutter_icons:
-  android: true
+flutter_launcher_icons:
+  android: "launcher_icon"
   ios: true
   image_path: "assets/icon/icon.png"
+  min_sdk_android: 21
